@@ -3,7 +3,7 @@ import time
 import yfinance as yf 
 import os
 
-WEBHOOK_URL = os.getenv(WEBHOOK_URL)
+WEBHOOK_URL = os.getenv("WEBHOOK_URL")
 
 #------------------------------------------------------------------------------  API  -----------------------------------------------------------------------
 
