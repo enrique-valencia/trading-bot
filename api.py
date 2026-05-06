@@ -1,7 +1,9 @@
 import requests
 import time 
 import yfinance as yf 
+import os
 
+WEBHOOK_URL = os.getenv("https://discord.com/api/webhooks/1501070006346190921/gQtw988yZmMYuitfR6KArmWSmL-Ff0snD5AUwQxY6m9fiPXm8jQquMMr_XftP9YWrGTP")
 
 #------------------------------------------------------------------------------  API  -----------------------------------------------------------------------
 
@@ -32,7 +34,7 @@ def guardar_datos(precio, accion):
 
 #--------------------------------------------------------------------------  ENVIAR NOTIFICACION  -----------------------------------------------------------------
 def enviar_alerta(mensaje):
-    requests.post('https://discord.com/api/webhooks/1501070006346190921/gQtw988yZmMYuitfR6KArmWSmL-Ff0snD5AUwQxY6m9fiPXm8jQquMMr_XftP9YWrGTP', json={
+    requests.post(WEBHOOK_URL, json={
         "content": mensaje
     })
 
