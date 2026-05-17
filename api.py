@@ -41,13 +41,13 @@ def enviar_alerta(mensaje):
 
 #---------------------------------------------------------------------------  BOT  -----------------------------------------------------------------------------
 
-acciones = ['META', 'MSFT', 'NVDA', 'MU']
+acciones = ['META', 'SNDK', 'NVDA', 'MU']
 
 rangos = {
     "META": {"bajo": 600, "alto": 620},
-    "MSFT": {"bajo": 400, "alto": 420},
-    "NVDA": {"bajo": 190, "alto": 210},
-    "MU":   {"bajo": 620, "alto": 650}
+    "SNDK": {"bajo": 1350, "alto": 1450},
+    "NVDA": {"bajo": 190, "alto": 240},
+    "MU":   {"bajo": 690, "alto": 770}
 }
 
 
